@@ -28,16 +28,15 @@ function x(index){
 }
 
 function makeLeave($node){
-  $node.removeClass('current enter').addClass('leave')
-  return $node
+  return $node.removeClass('current enter').addClass('leave')
 }
 
 function makeCurrent($node){
-  $node.removeClass('leave enter').addClass('current')
+  return $node.removeClass('leave enter').addClass('current')
 }
 
 function makeEnter($node){
-  $node.removeClass('leave current').addClass('enter')
+  return $node.removeClass('leave current').addClass('enter')
 }
 
 function init(){
