@@ -8,13 +8,12 @@
 }
 .images{
   position:relative;
-  display:flex;
 }
 
 .images > img{
   width: 100%;
-  transition:all 1s;
-  position:absoulte;
+  transition:all 0.5s;
+  position: absolute;
   top:0;
 }
 
@@ -25,11 +24,10 @@
 }
 
 .images > img.leave{
-  transform:translateX(0);
+  transform:translateX(-100%);
   z-index:1;
 }
 
 .images > img.enter{
-  transform:translateX(0);
-
+  transform:translateX(100%);
 }
