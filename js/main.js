@@ -2,14 +2,30 @@
 
 let index
 init()
-setInterval(()=>{
+
+let timer=setInterval(()=>{
   makeLeave(getImage(index))
   .one('transitionend',(e)=>{
     makeEnter($(e.currentTarget))
   })  
   makeCurrent(getImage(index+1))
   index++
-},3000)
+},1000)
+
+document.addEventListener('visibilitychange',function(e){
+  if(document.hidden){
+    window.clearInterval(timer)
+  }else{
+    timer=setInterval(()=>{
+      makeLeave(getImage(index))
+      .one('transitionend',(e)=>{
+        makeEnter($(e.currentTarget))
+      })  
+      makeCurrent(getImage(index+1))
+      index++
+    },1000)
+  }
+})
 
 
 
