@@ -20,3 +20,6 @@ div > button{
   padding:2px 5px;
   margin:2px 5px;
 }
+#controls{
+  text-align:center;
+}

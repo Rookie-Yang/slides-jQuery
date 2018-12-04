@@ -8,19 +8,25 @@
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-  <div class="window">
-    <div id=slides class="images">
-      <img src="./images/dog1.jpg" alt="图片" width="600" height="400">
-      <img src="./images/dog2.jpg" alt="图片" width="600" height="400">
-      <img src="./images/dog3.jpg" alt="图片" width="600" height="400">
-      <img src="./images/dog4.jpg" alt="图片" width="600" height="400">
+  <div class="container">
+    <div class="window">
+      <div id=slides class="images">
+        <img src="./images/dog1.jpg" alt="图片" width="600" height="400">
+        <img src="./images/dog2.jpg" alt="图片" width="600" height="400">
+        <img src="./images/dog3.jpg" alt="图片" width="600" height="400">
+        <img src="./images/dog4.jpg" alt="图片" width="600" height="400">
+      </div>
     </div>
-  </div>
-  <div id="buttonWrapper" style="text-align: center">
-    <button>1</button>
-    <button>2</button>
-    <button>3</button>
-    <button>4</button>
+    <div id="controls">
+      <button id="previous">上一张</button>
+      <button id="next">下一张</button>
+    </div>
+    <div id="buttonWrapper" style="text-align: center">
+      <button>1</button>
+      <button>2</button>
+      <button>3</button>
+      <button>4</button>
+    </div>
   </div>
   <script src="./node_modules/jquery/dist/jquery.min.js"></script>
   <script src="./js/main.js"></script>
